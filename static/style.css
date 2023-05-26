@@ -1,9 +1,20 @@
 body{
     background-color: rgb(216, 221, 243);
    font-family: 'Roboto', sans-serif;
+     /* Set the background image for the body element using a relative file path */
+        background-color: rgba(255,255,255,0.5)
+
+        background-image: url("static/homepage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        #filter: brightness(0.7); /* reduce the brightness to 70% */
 }
+
+    }
+
+
 .login-box{
-    width: 500px;
+    width: 200px;
     height: 500px;
     background-color: #2d4370;
     color: white;
@@ -13,17 +24,47 @@ body{
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
+
+}
+
 }
 
 h1{  margin: -30px;
     text-align: center;
-    font-size: 45px;
+    font-size: 150px;
 	 margin-bottom: 30px;
+
+  font-weight: 900;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+   color: #00FFFF;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+  background-clip: text;
+  -webkit-background-clip: text;
+   text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
 }
+
+
 h2{
-    font-size: 15px;
-    text-align: center;
+
+    font-size: 70px;
+  font-weight: 600;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
+
 .login-box p{
         font-size: 25px;
 		text-align: center;
@@ -52,8 +93,8 @@ h2{
     border: none;
     outline: none;
     height: 40px;
-    background: #1c8adb;
-    color: #fff;
+    /
+    color: pink;
     font-size: 18px;
     border-radius: 20px;
 }
@@ -70,4 +111,79 @@ h2{
      padding: 5px;
      width: 50%;
     margin: auto;
+}
+form{
+        border: 1px solid black;
+        border-radius: 1rem;
+        padding: 1rem;
+        background-color: rgb(216, 221, 243);
+        margin: auto;
+		width: 50%;
+		height: 50%;
+		#padding: 20px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		#opacity: 0.7; /* set the opacity to 50% */
+        #background-color: rgba(0,0,0,0); /* make the background transparent */
+ }
+
+
+header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+
+      .nav {
+        background-color: #f2f2f2;
+        overflow: hidden;
+      }
+      .nav a {
+        float: left;
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      main {
+        padding: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+
+.button {
+  background-color: yellow;
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 76px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+a {
+  background-color: #a61e4d;
+  color: #eee;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+a: hover {
+  background-color: #d6336c;
 }
