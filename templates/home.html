@@ -1,4 +1,97 @@
+<!doctype html>
 {% extends "layout.html"%}
 {% block body%}
-<h1>Welcome to Student Performance Prediction System</h1>
+<html lang="en">
+
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--   Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--   google font cdn-->
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto+Condensed&display=swap"
+    rel="stylesheet">
+<!--    <link rel="stylesheet" type="text/css" href="static/style.css">-->
+
+<link rel="stylesheet" type="text/css" href="../static/style.css">
+
+  <title>Student Performance Prediction System </title>
+
+  <style>
+  body{
+    background-color: rgb(216, 221, 243);
+   font-family: 'Roboto', sans-serif;
+     /* Set the background image for the body element using a relative file path */
+        background-color: rgba(255,255,255,0.5)
+
+        background-image: url("homepage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        #filter: brightness(0.7); /* reduce the brightness to 70% */
+}
+
+h1{  margin: -30px;
+    text-align: center;
+    font-size: 40px;
+	 margin-bottom: 30px;
+
+  font-weight: 900;
+   color: #FFFFFF;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,0px 0px 20px #b393d3;
+  background-clip: text;
+  -webkit-background-clip: text;
+   text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+
+h2{
+
+    font-size: 70px;
+  font-weight: 600;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+  </style>
+</head>
+<body>
+
+
+  <h1 class="text-center mt-5 mb-3" class="add-font" style="color: ;"> Students Performance Prediction System </h1>
+
+
+
+<!--<center><button><a class="nav-link" href="/login">Login</a></button></center>-->
+<!--  <p>Dont Have an account?</p>-->
+<!--<center><button class="button"><a class="nav-link" href="/register">Click Here to Register</a></button></center>-->
+
+
+
+
+</body>
+
+</html>
 {% endblock %}
