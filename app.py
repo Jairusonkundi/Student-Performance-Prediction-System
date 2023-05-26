@@ -8,9 +8,10 @@ from sqlalchemy import create_engine,text
 from sqlalchemy.orm import scoped_session,sessionmaker
 from sqlalchemy.sql import text
 from passlib.hash import sha256_crypt
+from twilio.rest import Client
 
 
-engine= create_engine("mysql+pymysql://root:Jairus1234567@localhost/register")
+engine= create_engine("mysql+pymysql://jairo:12345678@localhost/login")
                       #(mysql+pymysql://username:password@localhost/databasename)
 
 db=scoped_session(sessionmaker(bind=engine))
@@ -151,6 +152,26 @@ def prediction():
 # @app.route("/result")
 # def results():
 #     return render_template("result.html")
+# @app.route("/send_sms")
+# def send_sms(student_name, grade):
+# @app.route("/send_sms")
+# def send_sms(grade):
+#
+#     # Your Twilio account sid and auth token
+#     account_sid = "ACae8d5c83cdc12ef88647fb6925d54d02"
+#     auth_token = "66984aca9974d1d4c7efa9c3b6feba0d"
+#     client = Client(account_sid, auth_token)
+#
+#     message = f"Hello {username}, Your grade is: {grade}"
+#
+#     # Your Twilio phone number
+#     from_number = "+254743192585"
+#     # The student's phone number
+#     to_number = "+254701436784"
+#
+#     client.messages.create(to=to_number, from_=from_number, body=message)
+#
+#     return render_template("notification.html")
 
 if __name__ == '__main__':
     # to secure session data from attackers
