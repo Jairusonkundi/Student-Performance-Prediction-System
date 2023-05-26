@@ -25,28 +25,46 @@
     rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../static/style.css">
 
-      <style>
- form{
-        border: 1px solid black;
-        border-radius: 1rem;
-        padding: 1rem;
-        background-color: rgb(216, 221, 243);
- }
- .bg {
-  /* The image used */
-  background-image: url("https://s35691.pcdn.co/wp-content/uploads/2019/11/Implementing-active-learning-and-student-centered-pedagogy.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-    </style>
 
   <title>Students Performance Prediction System </title>
+     <style>
+
+h1{  margin: -30px;
+    text-align: center;
+    font-size: 40px;
+	 margin-bottom: 30px;
+
+  font-weight: 900;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+   color: #FFFFFF;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+  background-clip: text;
+  -webkit-background-clip: text;
+   text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+
+h2{
+
+    font-size: 70px;
+  font-weight: 600;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+  </style>
 </head>
 
 <body>
@@ -58,19 +76,7 @@
 
     <form  action="/predict " method="POST" >
 
-<!--        <div class="mt-3 mb-3">-->
-<!--         <b><label for="study" class="form-label"> Study Time </label></b>-->
-<!--          <input type="number" max="21" step="1" class="form-control" id="study" name="studytime" placeholder="Enter  number of study hours" required>-->
 
-<!--&lt;!&ndash;            <div class="mt-3 mb-3">&ndash;&gt;-->
-<!--         <b><label for="Medu" class="form-label"> Mother Education </label></b>-->
-<!--          <input type="number" max="100" step="0.01" class="form-control" id="medu" name="Medu" placeholder="Enter mMother's Education level" required>-->
-<!--        </div>-->
-
-<!--        <div class="mt-3 mb-3">-->
-<!--         <b><label for="Fedu" class="form-label"> Father Education </label></b>-->
-<!--          <input type="number" max="100" step="0.01" class="form-control" id="fedu" name="Fedu" placeholder="Enter Father's Education level" required>-->
-<!--        </div>-->
 
             <div class="mt-3 mb-3">
                 <b><label for="studytime" class="form-label"> Study Time </label></b><br>
@@ -86,19 +92,6 @@
             </div>
 
 
-<!--        <b><label for="medu" class="form-label"> Mother's Education Level </label></b><br>-->
-<!--            <div class="mt-3 mb-3">-->
-<!--                    <select class="form-control"name="Medu"required="required">-->
-<!--&lt;!&ndash;              <option value="" selected> Mother's Education Level</option>&ndash;&gt;-->
-<!--                <option value="" disabled selected>Mother's Education Level</option>-->
-<!--                <option value="0">None</option>-->
-<!--                <option value="1">Primary Education(Lower)</option>-->
-<!--              <option value="2">Primary Education(Upper)</option>-->
-<!--                <option value="3">Secondary Education</option>-->
-<!--                <option value="4">Higher Education</option>-->
-<!--  &lt;!&ndash; additional options &ndash;&gt;-->
-<!--            </select>-->
-<!--            </div>-->
         <b><label for="medu" class="form-label"> Mother's Education Level </label></b><br>
             <div class="mt-3 mb-3">
             <select class="form-control"name="Medu"required="required">
@@ -141,12 +134,12 @@
 
         <!-- submit button -->
         <div >
-          <button type="submit" name="submit" class="btn btn-primary" >Submit</button>
+          <button type="submit" name="submit" class="btn btn-primary"style="background-color: blue;" >Submit</button>
 
 
               <!-- Reset button -->
 
-          <button type="reset" name="Reset" class="btn btn-primary" style="background-color: red;">Reset</button>
+          <button type="reset" name="Reset" class="btn btn-primary" style="background-color: blue;">Reset</button>
         </div>
 
 
